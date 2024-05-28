@@ -3,7 +3,8 @@
 
 body {
   font-family: "Reddit Mono", monospace !important;
-  position: relative;
+  position: relative; 
+  /* cursor: none; */
   font-size: 14px;
   overflow-x: hidden;
   background: linear-gradient(
@@ -113,8 +114,6 @@ nav li:nth-child(7) {
 .top-header h4 span:nth-child(8) {
   animation-delay: 1.5s;
 }
-
-
 @keyframes in {
   0% {
     opacity: 0;
@@ -126,7 +125,7 @@ nav li:nth-child(7) {
   }
 }
 .bg h3 span {
-  color: #f2b8a2 !important; 
+  color: #f2b8a2 !important;
   opacity: 0;
   transform: translateY(20px) rotate(90deg);
   transform-origin: left;
@@ -134,8 +133,7 @@ nav li:nth-child(7) {
   display: inline-block;
   /* transform: translateX(-100%);
   animation: byBottom 1s ease both; */
-} 
-
+}
 .bg h3 span:nth-child(1) {
   animation-delay: 0.1s;
 }
@@ -160,14 +158,12 @@ nav li:nth-child(7) {
 .bg h3 span:nth-child(8) {
   animation-delay: 1.5s;
 }
-
 .bg h3 {
   color: #fff;
   font-size: 60px !important;
   /* transform: translateY(-50px);
   overflow: hidden; */
 }
-
 /* .bg h3:last-child {
   animation: byBottom 1s 0.25s ease both;
 } */
@@ -176,7 +172,6 @@ nav li:nth-child(7) {
     font-size: 40px !important;
   }
 }
-
 .bg p {
   color: #fff;
   /* transition: 1s ease-in-out; */
@@ -185,12 +180,12 @@ nav li:nth-child(7) {
   width: 50px;
   height: 50px;
   object-fit: cover;
-} 
+}
 .navbar-brand i {
-   color: #f2b8a2;
+  color: #f2b8a2;
   font-size: 30px;
   /* object-fit: cover; */
-} 
+}
 .gradient {
   background: linear-gradient(
     90deg,
@@ -462,29 +457,24 @@ nav li:nth-child(7) {
     scale: 1 1;
   }
 }
-
-
 .animate {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
   }
-
   to {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
 }
-
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -498,21 +488,16 @@ nav li:nth-child(7) {
     transform: none;
   }
 }
-
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
-} 
-
-
-
+}
 @-webkit-keyframes fadeInRight {
   from {
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
   }
-
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -532,50 +517,41 @@ nav li:nth-child(7) {
     transform: none;
   }
 }
-
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
-
 .three {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
-} 
-
+}
 .four {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
-} 
-
-
-.swift-up-text{
+}
+.swift-up-text {
   animation: fadeInUp 4s ease backwards;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-} 
-
+}
 @keyframes fadeInUp {
   0% {
-      transform:translate(0px, 50px);
-      opacity: 0;
+    transform: translate(0px, 50px);
+    opacity: 0;
   }
 
   100% {
-    transform:translate(0px, 0);
-      opacity: 1;
+    transform: translate(0px, 0);
+    opacity: 1;
   }
-} 
-
-
+}
 .one {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
-}  
-
+}
 /*==== FADE IN UP ===*/
 @-webkit-keyframes fadeInUp1 {
   from {
@@ -589,8 +565,7 @@ nav li:nth-child(7) {
     -webkit-transform: none;
     transform: none;
   }
-} 
-
+}
 @keyframes fadeInUp1 {
   from {
     opacity: 0;
@@ -604,9 +579,23 @@ nav li:nth-child(7) {
     transform: none;
   }
 }
-
 .fadeInUp1 {
   -webkit-animation-name: fadeInUp1;
   animation-name: fadeInUp1;
 }
-
+.cursor, .cursor-follow {
+  position: absolute;
+  width: 20px;
+  height: 20px; 
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+}
+.cursor {
+  background-color: #000;
+  width: 3px;
+  height: 3px;
+}
+.cursor-follow {
+  border: 1px solid #000;
+}
