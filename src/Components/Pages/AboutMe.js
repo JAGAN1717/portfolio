@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AboutMe() {
   return (
-    <section className='aboutbg '>
+    <section className='aboutbg swift-up-text'>
       <div className='container'>
         <div className='text-start'>
           <h3 className='fw-bold mb-3'>ABOUT ME</h3>

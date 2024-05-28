@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
 
-export default function Outlets() {
+export default function Outlets() { 
+
   return (
     <div>
-        <Header />
-        <Outlet/>
-        <Footer/>
+      <Header />
+      <Outlet />
+      <Footer />
     </div>
   )
 }

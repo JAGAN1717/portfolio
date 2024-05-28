@@ -8,6 +8,7 @@ import AppRoutes from './Components/Routes';
 function App() {
   return (
     <div className="App">
+        <div class="scroll_watcher"></div>
       <AppRoutes/>
     </div>
   );
