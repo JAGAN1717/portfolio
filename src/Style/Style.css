@@ -198,7 +198,8 @@ nav li:nth-child(7) {
   background-color: #f38c8d;
 }
 .Con_bg {
-  background-color: #f2b8a2 !important;
+  background-color: #f2b8a2 !important; 
+  border-radius:50% 50% 0 0;
 }
 .conatct {
   width: 400px;
@@ -329,6 +330,8 @@ nav li:nth-child(7) {
   padding: 10px;
   border-left: 1px solid #253c49;
   border-top: 1px solid #253c49;
+  height: 270px;
+  object-fit: cover;
 }
 .pro_i h5 {
   color: #f2b8a2 !important;

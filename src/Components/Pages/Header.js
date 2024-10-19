@@ -5,6 +5,14 @@ export default function Header() {
 
   const router = useNavigate();
 
+  
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = `https://bmjagan.vercel.app/assets/JAGAN_BM.pdf`; // Path to your PDF
+    link.download = 'JAGAN_B.pdf'; // Filename for the downloaded file
+    link.click();
+  }
+
 
 
   return (
@@ -34,22 +42,25 @@ export default function Header() {
                   <li className={window.location.pathname == "/about-Me" ? "nav-item active" : 'nav-item '}>
                     <Link className={"nav-link"} to={'/about-Me'}>About me</Link>
                   </li>
+
                   <li className="nav-item">
                     <a className="nav-link" onClick={() => router('/')} href="#contact" >Contact me</a>
-                  </li>
+                  </li> 
+
                   <li className="nav-item">
-                    <a className="nav-link Sicons2" href="#contact" >
+                    <a className="nav-link Sicons2" target='_blank' href="https://www.linkedin.com/in/jagan-b-502b37229/" >
                       {/* <img src='/assets/images/__linked in.png' alt='logo' className='linked' /> */}
                       <i class="fa fa-linkedin-square " aria-hidden="true"></i>
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link Sicons2" href="#contact" >
+                    <a className="nav-link Sicons2" target='_blank' href="https://github.com/JAGAN1717" >
                       <i class="fa fa-github" aria-hidden="true"></i>
                     </a>
                   </li>
+
                   <li className="nav-item">
-                    <a className="nav-link Sicons2" href="#contact" >
+                    <a className="nav-link Sicons2" onClick={()=> handleDownload()} href="#contact" >
                       <button type='button' className='btn pb-1'>RESUME</button>
                     </a>
                   </li>
