@@ -86,7 +86,7 @@ export default function Projects() {
               </div>
               <div className='text-end mb-3'>
                 <h6>Technologies  include:</h6>
-                <p>REACT JS, HTML & CSS </p>
+                <p>FLUTTER </p>
               </div>
             </div>
             <div className='col-md-5 animate fadeInRight four'>
